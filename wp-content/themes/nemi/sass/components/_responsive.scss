@@ -1,0 +1,197 @@
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+.navbar-offcanvas{
+    border: none;
+    ul#main-menu-offcanvas{
+        float: none;
+        display: block;
+        > li{
+            position: relative;
+            border-bottom: 1px solid $border-color;
+            display: block;
+            float: none;
+            .caret{
+                background: transparent;
+                border: none;
+                left: -10px;
+                top: 15px;
+                position: absolute; 
+                z-index: 9;
+                @include size(22px, 22px);
+                &:hover{
+                    cursor: pointer;
+                }
+                &:after{
+                    background: url("#{$image-theme-path}icon-plus.png") no-repeat;
+                    content: "";
+                    top: 5px;
+                    left: 6px;
+                    position: absolute;
+                    z-index: 9;
+                    @include size(10px, 10px);
+                }
+                &.show{
+                    &:after{
+                        background: url("#{$image-theme-path}icon-minus.png") no-repeat;
+                    }
+                }
+            }
+            ul{
+                position: relative;
+                float: none;
+                border: none;
+                @include box-shadow(none);
+                padding: 0 15px ;
+                li a{
+                    font-size: 12px;
+                    font-weight: 300;
+                    padding-top: 10px;                
+                    padding-bottom: 10px;                    
+                    &:hover{
+                        color: $theme-color;
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+        li.active > a{
+            background: none;
+            color: $theme-color;
+        }
+    }
+}
+#main-menu-offcanvas{
+    li > a{
+        font-size: $font-size-base + 2;
+        @include rtl-margin-left(15px);
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+.sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 25%;
+    z-index: 999;
+    @include box-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+    @include rtl-text-align-left();
+    background-color: $white;
+    @include rtl-right(-50%);
+    @include transition(all 0.3s ease-out);
+    &.active {
+        @include rtl-right(0);
+    }
+    @media (max-width: $screen-lg){
+        width: 17%;
+    }
+    @media (max-width: $screen-md-max){
+        width: 40%;
+    }
+    @media (max-width: $screen-sm){
+        width: 50%;
+    }
+    @media (max-width: $screen-xs){
+        width: 50%;
+    }
+    @media (max-width: $screen-phone){
+        width: 80%;
+        @include rtl-right(-80%);
+    }
+    .navbar-offcanvas-collapse{
+        padding: 0 40px;
+    }
+}
+
+.btn-offcanvas {
+    background: url("#{$image-theme-path}icon-close.png") no-repeat;
+    color: $gray;
+    font-size: 0;
+    position: relative;
+    @include size(22px,26px);
+    &:hover{
+        background-position: 0 -28px;
+    }
+}
+.offcanvas-head {
+    padding: 36px;
+    button {
+        padding: 9px 15px 10px;
+        @include rtl-margin-right(10px);
+    }
+    span{
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
+.row-offcanvas {
+    position: relative;
+    @include transition(all 0.25s ease-out);
+}
+
+.offcanvas-showright {
+    background: rgba($theme-color,0.8);
+    position: relative;
+    @include transition(all 0.25s ease-out);
+    width: 400px;
+    position: absolute;
+    right: -800px;
+    top: 0;
+    z-index: 1000;
+    display: block;
+    padding: 50px 0;
+    &.active {
+        display: block;
+        right: 0;
+    }
+    .showright{
+        background-color: $white;
+        @include size(40px,40px);
+        border: none;
+        @include rtl-margin-right(50px);
+        .fa{
+            color: $theme-color;
+        }
+    }
+}
+@media (min-width: $screen-phone) and (max-width: $screen-lg){
+    .blog-home{
+        article{
+            text-align: center;
+        }
+    }
+    .pbr-page-link .widget-heading{
+        font-size: $font-size-base + 4 !important;
+    }
+}
+@media (min-width: $screen-phone) and (max-width: $screen-sm){
+    .products-grid .product-block .caption{
+        text-align: center;
+    }
+} 
+@media (max-width: $screen-phone) {
+    .pbr-page-link .widget-heading{
+        font-size: $font-size-base + 4 !important;
+    }
+    .blog-home{
+        article{
+            text-align: center;
+        }
+    }
+    .products-grid .product-block .caption{
+        text-align: center;
+    }
+    .active-mobile{
+        &.cart-popup{
+            .active-content{
+                right: 0;
+                left: -100px;
+            }
+        }
+    }
+}

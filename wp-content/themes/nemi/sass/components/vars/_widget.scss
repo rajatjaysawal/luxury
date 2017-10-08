@@ -1,0 +1,104 @@
+/**
+ *   Blocks Layout Selectors
+ */
+$block-prefix                    : 'widget' !default;
+$block-selector                  : 'widget ' !default;
+$block-heading-selector          : 'widget-title' !default;
+$block-content-selector          : 'widget-content' !default;
+$block-heading-reversed-selector : 'widget-title-reversed' !default;
+$container-prefix                : 'wpb-container' !default;
+
+
+
+// Box Modules
+// -------------------------
+$block-module-margin-bottom                     : 45px !default;
+$block-module-padding                           : 0px !default;
+$block-module-border-color                      : none !default;
+
+$block-module-heading-border                    : 0px !default;
+$block-module-heading-bg                        : transparent !default;
+$block-module-heading-color							: $black !default;
+$block-module-heading-font-size                 : $font-size-base + 4 !default;
+$block-module-heading-font-weight               : 600 !default;
+$block-module-heading-transform                 : uppercase !default;
+$block-module-heading-line-height               : $block-module-heading-font-size !default;
+$block-module-heading-padding                   : 0 0 12px !default;
+$block-module-heading-margin                    : 0 0 15px !default;
+$block-module-heading-show-separator            : none !default;
+$block-module-heading-image-position            : 0 0 !default;
+
+$block-module-content-bg                        : transparent!default;
+$block-module-content-border                    : none !default;
+$block-module-content-padding                   : 20px !default;
+$block-module-content-margin                    : 1px !default;
+$block-module-content-radius                    : 0px !default;
+
+$block-module-highlighted-bg                    : $theme-color !default;
+$block-module-highlighted-border                : solid 2px $theme-color !default;
+
+$block-module-footer-heading-color              : $white !default;
+
+$block-product-padding                          : 0 !default;
+$block-heading-letter-spacing                   : 0 !default;
+
+// Sidebar
+// -------------------------
+$block-sidebar-module-border                   : none !default;
+$block-sidebar-box-padding                     : 0 !default; 
+$block-sidebar-box-margin                      : 0 0 55px !default;
+
+$block-sidebar-list-font-size                  : 12px !default;
+$block-sidebar-list-fweight                    : 300 !default;
+$block-sidebar-list-transform                  : uppercase !default;
+$block-sidebar-list-letter-spacing             : 1px !default;
+$block-sidebar-list-padding                    : 15px 17px !default;
+$block-sidebar-list-border-color               : $border-color !default;
+
+$block-sidebar-hightlight-margin               : 0 0 20px !default;
+$block-sidebar-heading-hightlight-bg           : $nocolor !default;
+$block-sidebar-heading-hightlight-padding      : 0 !default;
+$block-sidebar-heading-hightlight-margin       : 0 !default;
+$block-sidebar-heading-hightlight-color        : $black !default;
+$block-sidebar-heading-hightlight-margin-bottom: 0px !default;
+$block-sidebar-heading-hightlight-font-size    : 14px !default;
+$block-sidebar-heading-hightlight-font-weight  : 900 !default;
+$block-sidebar-hightlight-content-bg           : $nocolor !default;
+$block-sidebar-hightlight-content-color        : #666666 !default; 
+$block-sidebar-hightlight-content-padding      : 0 !default;
+$block-sidebar-hightlight-border               : 1px solid rgba(0, 0, 0, 0.1) !default;
+$block-sidebar-hightlight-font-size            : 12px !default;	
+$block-sidebar-hightlight-transform            : uppercase !default;
+$block-sidebar-hightlight-font-weight          : 300 !default;						
+$block-sidebar-link-hightlight-color           : $white !default;
+$block-sidebar-link-hightlight-hover-color     : $theme-color !default;
+$block-sidebar-list-hightlight-border-color    : #393939 !default;
+$block-sidebar-list-hightlight-font-size       : 10px !default;
+$block-sidebar-list-hightlight-padding         : 17px 15px !default;
+$block-sidebar-list-hightlight-image           : url('#{$image-theme-path}dot.jpg') 0 22px no-repeat !default;
+$block-sidebar-list-image                      : url('#{$image-theme-path}dot.jpg') 0 22px no-repeat !default;
+
+$block-sidebar-heading-font-size               : $font-size-base + 6 !default;
+$block-sidebar-heading-color                   : $black !default; 
+$block-sidebar-heading-font-weight             : 600 !default;
+$block-sidebar-heading-line-height             : $block-sidebar-heading-font-size !default;
+$block-sidebar-heading-margin                  : 0 0 20px !default;
+$block-sidebar-heading-padding                 : 0px 19px !default;
+
+$block-sidebar-widget-border                   : 1px solid lighten($border-color, 3%) !default;
+
+/********* LAYOUT **************/
+
+// Widget tags cloud
+// -------------------------
+$widget-tag-color              : $black !default;
+$widget-tag-color-hover        : $white !default;
+$widget-tag-bg                 : transparent !default;
+$widget-tag-bg-hover           : $theme-color !default;
+$widget-tag-font-size          : $font-size-base;
+$widget-tag-padding            : 15px 20px !default;
+$widget-tag-margin             : 0 5px 7px 0 !default;
+$widget-tag-border             : 1px solid $black !default;
+$widget-tag-border-color-hover : $brand-primary !default;
+$widget-tag-border-radius      : 0px !default;
+$widget-tag-transform          : uppercase !default;

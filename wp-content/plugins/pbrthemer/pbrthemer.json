@@ -1,0 +1,22 @@
+{
+    "name" : "Ocean Framework For Themes",
+    "slug" : "pbrthemer",
+    "homepage" : "http://themeocean.net/",
+    "download_url" : "http://www.themeocean.net/plugins/pbrthemer.zip",
+    
+    "version" : "1.1.2",
+    "requires" : "4.0",
+    "tested" : "4.8.1",
+    "last_updated" : "2017-08-13 12:00:00",
+    "upgrade_notice" : "Here's why you should upgrade...",
+    
+    "author" : "Themeocean",
+    "author_homepage" : "http://themeocean.net/",
+    
+    "sections" : {
+        "description" : "Implement rich functions for themes base on prestabrain wordpress framework and load widgets for theme used, this is required.",
+        "installation" : "Upload or install by notice required the Wpopal Framework For Themes plugin to your site, Activate it.",
+        "changelog" : " Changelog. <h4>1.1.2</h4><p><em>Release Date - 13 August 2017</em><ul><li>Add function disable srcset</li><li>Fix file social share</li></ul><h4>1.1</h4><p><em>Release Date - 06 July 2017</em><ul><li>Update class check update plugin</li></ul><h4>1.0.0</h4><p><em>Release Date - 25 June 2017</em><ul><li>Release plugin</li></ul>
+    }
+    
+}

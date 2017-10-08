@@ -1,0 +1,295 @@
+/*!
+ * Bootstrap v3.3.5 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+ body{
+  right: 0;
+  position: relative;
+  @include transition(all .3s ease);
+ }
+ img{
+    max-width: 100%;
+    height:auto;
+ }
+.sticky{
+    border:1px solid $border-color;
+    padding:10px;
+ }
+  .sticky{
+    position: relative;
+    background-color: #fafafa;
+    padding: 20px;
+}
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 30px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 30px 15px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 15px 30px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 30px 15px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #f8f8f8;
+    border: 1px solid #eee;
+    max-width: 100%;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    padding-top: 4px;
+}
+.wp-caption.alignleft {
+    margin: 5px 30px 15px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 15px 30px;
+}
+.wp-caption.alignnone{
+    display: inline-block;
+}
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* Above WP toolbar. */
+}
+
+.nopadding{
+   padding:0!important;
+   margin:0!important;
+}
+
+h1,h2,h3,h4,h5{
+  text-transform:uppercase;
+}
+strong{
+}
+/**
+ * Wordpress Elements
+ */
+
+.entry-content-page{ 
+    .edit-link{
+        background:#000;
+       
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding:5px 6px;
+        a{
+            font-size: 11px;
+          color: #FFF!important;
+        }  
+        z-index: 10000;
+    }
+    position:relative;
+}
+
+
+/*------------------------------------*\
+    Comment List
+\*------------------------------------*/
+
+.extend-ul-li {
+  ul{
+    @include rtl-padding-left(0);
+        list-style: none;
+        li{
+            @include rtl-padding (8px, 0, 8px, 0);
+            &:last-child{
+                padding-bottom: 0;
+                border-bottom: none;
+            }
+            &.cat-parent {
+                .children {
+                    margin-top: 5px;
+                }
+            }
+            &.current-cat,&.current-cat-parent {
+                > a {
+                  color: $gray-dark;
+                  &:hover{
+                    color: $theme-color;
+                  } 
+                }
+            }
+            ul li {
+                border-bottom: none;
+                @include rtl-padding (7px ,0 ,7px ,20px);
+            }
+        }
+        li {
+            position: relative;
+            .closed ,.opened {
+                position: absolute;
+                @include rtl-left(0px);
+                top: 12px;
+                content: "";
+                font-size: 10px;
+                color: #aaa;
+                cursor: pointer;
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+  }
+}
+
+.contactinfos{
+  font-size: 14px;
+    li{
+    line-height: 30px;
+        i{
+            width: 25px;
+            margin: 0 3px;
+            color: $theme-color;
+        }
+    }
+}
+
+/**
+ * 4.0 Elements
+ */
+
+hr {
+  background-color: #eaeaea;
+  background-color: rgba(51, 51, 51, 0.1);
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.6em;
+}
+
+dl {
+  margin-bottom: 1.6em;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: 1.6em;
+}
+
+table,
+th,
+td {
+  border: 1px solid #eaeaea;
+  border: 1px solid rgba(51, 51, 51, 0.1);
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-width: 1px 0 0 1px;
+  margin: 0 0 1.6em;
+  table-layout: fixed; /* Prevents HTML tables from becoming too wide */
+  width: 100%;
+}
+
+caption,
+th,
+td {
+  font-weight: normal;
+  text-align: left;
+}
+
+th {
+  border-width: 0 1px 1px 0;
+  font-weight: 700;
+}
+
+td {
+  border-width: 0 1px 1px 0;
+}
+
+th, td {
+  padding: 0.4em;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+figure {
+  margin: 0;
+}
+
+del {
+  opacity: 0.8;
+}
+
+button{
+  outline: none;
+}

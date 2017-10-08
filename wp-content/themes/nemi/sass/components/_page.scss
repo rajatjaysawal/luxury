@@ -1,0 +1,266 @@
+#pbr-masthead, .woocommerce-page, .page-template-full-width {
+   .container {
+      max-width: 1680px;
+      width    : 100%;
+   }
+}
+.woocommerce-page .pbr-footer,.woocommerce-page .pbr-copyright{
+   .container{
+      max-width: 1230px;
+   }
+}
+.page-template-full-width {
+   .pbr-footer {
+      .container {
+         max-width: inherit !important;
+      }
+   }
+}
+
+.woocommerce-cart, .woocommerce-checkout {
+   .container {
+      max-width: 1200px;
+      width    : 100%;
+   }
+}
+
+.woocommerce-page {
+   #page {
+      overflow: hidden;
+   }
+}
+
+.page-template-template-boxed, .page-template-template-home-page {
+   #main {
+      margin: auto;
+      @media (min-width: 1367px) {
+         max-width: 1650px;
+         width    : 100%;
+      }
+      @media (min-width: $screen-sm-max) and (max-width: 1650px) {
+         padding: 0 15px;
+      }
+   }
+}
+
+.page-template-full-width {
+   .vc_row {
+      // margin: 0 !important;
+   }
+}
+
+/* BREADCRUMB */
+.woocommerce {
+   #breadcrumb{
+      .container{
+         max-width: 100%;
+         padding: 0;
+      }
+   }
+   .pbr-breadscrumb {
+      align-items    : center;
+      background-size: cover;
+      min-height     : 323px;
+   }
+}
+/* BREADCRUMB END */
+
+/* ABOUT-US */
+
+.fetured-box {
+   color: $white;
+   .vc_custom_heading {
+      letter-spacing: 2px;
+      text-align    : center !important;
+      text-transform: uppercase;
+   }
+   .icons {
+      color    : $white;
+      font-size: 50px;
+   }
+}
+
+/* ABOUT-US-END */
+
+/* BOX-NEWLETTER */
+
+.box-newletter {
+   text-align: center;
+   .wpb_content_element {
+      margin-bottom: 0;
+   }
+   .icons {
+      color    : $white;
+      font-size: 25px;
+   }
+   .vc_custom_heading {
+      display       : inline-block;
+      font          : 400 18px $font-family-sans-serif !important;
+      letter-spacing: 2px;
+      padding-bottom: 15px;
+      position      : relative;
+      text-align    : center;
+      text-transform: uppercase;
+      &:after {
+         background: $white;
+         bottom    : 0;
+         content   : "";
+         height    : 1px;
+         left      : 50%;
+         position  : absolute;
+         width     : 55px;
+         @include translateX(-50%);
+      }
+   }
+   .input-group {
+      display: block;
+      .form-control {
+         background   : transparent;
+         border-color : #3e3e3e;
+         border-width : 0 0 2px 0;
+         display      : block;
+         max-width    : inherit;
+         margin-bottom: 30px;
+         text-align   : center;
+         &:focus {
+            border-color: $theme-color;
+            @include box-shadow(none);
+            outline: none;
+         }
+      }
+      .input-group-btn {
+         display: block;
+         text-align: center;
+         width  : inherit;
+         .btn {
+            display: block;
+            margin: auto;
+         }
+      }
+   }
+   p {
+      color         : $white;
+      font          : 300 12px $font-family-sans-serif;
+      letter-spacing: 2px;
+   }
+}
+
+/* BOX-NEWLETTER-END */
+
+/**
+ * 6.10 Contributor Page
+ * -----------------------------------------------------------------------------
+ */
+
+.contributor {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:      border-box;
+	padding: 48px 10px;
+}
+
+.contributor:first-of-type {
+	padding-top: 24px;
+}
+
+.contributor-info {
+	margin: 0 auto;
+	max-width: 474px;
+}
+
+.contributor-avatar {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	@include rtl-float-left();
+	margin: 0 30px 20px 0;
+	padding: 2px;
+}
+
+.contributor-name {
+	font-size: 16px;
+	font-weight: 900;
+	line-height: 1.5;
+	margin: 0;
+}
+
+.contributor-bio a {
+	text-decoration: underline;
+}
+
+.contributor-bio a:hover {
+	text-decoration: none;
+}
+
+.contributor-posts-link {
+	display: inline-block;
+	line-height: normal;
+	padding: 10px 30px;
+}
+
+.contributor-posts-link:before {
+	content: "\f443";
+}
+
+/**
+ * 6.11 404 Page
+ * -----------------------------------------------------------------------------
+ */
+.notfound-page{
+	.main-content {
+      padding-bottom: 100px;
+	}
+   .title{
+      color      : $black;
+      display    : block;
+      font-size  : 120px;
+      font-weight: 700;
+      line-height: 155px;
+      margin-top: 93px;      
+   }
+   .sub-title{
+      color         : $black;
+      display       : block;
+      font-size     : 30px;
+      font-weight   : 500;
+      line-height   : 52px;
+      position      : relative;
+   }
+   .error-description{
+      color  : $gray;
+      font-size: $font-size-base + 2;
+      padding: 0 20%;
+      @media(max-width: $screen-sm-max){
+         padding: 0 10px;
+      }
+   }
+   .search-notfound-page{
+      margin-top: 62px;
+      position: relative;
+      .searchform{
+         max-width: 505px;
+         @include transform(translate(70%, 0px));
+      }
+      .input-search{
+         background: #f1f1f1;
+         height: 50px;
+         width: 98%;
+      }
+      .btn-search{
+         background: $gray-dark;
+         border-color: $gray-dark;
+         padding: 0;
+         .fa{
+            background: transparent;
+            border: none;
+            color: $white;
+            font-size: $font-size-base + 4;
+            padding: 16px 37px;
+         }
+      }
+   }
+}
+.search-no-results{
+   .site-content{
+      margin-bottom: 30px;
+   }
+}

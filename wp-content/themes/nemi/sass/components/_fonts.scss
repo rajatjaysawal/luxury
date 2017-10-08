@@ -1,0 +1,13 @@
+$font-url: '../fonts/glamor/' !default;
+
+//=======================================
+@font-face {
+	font-family: 'glamor';  
+	src: url("#{$font-url}Glamor-CondensedItalic.ttf");  
+	font-weight: 600;  
+}
+@font-face {
+	font-family: 'glamor';  
+	src: url("#{$font-url}Glamor-BoldCondensedItalic.ttf");  
+	font-weight: 700;  
+}

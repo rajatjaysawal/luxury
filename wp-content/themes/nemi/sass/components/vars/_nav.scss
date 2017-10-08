@@ -1,0 +1,139 @@
+// Main Menu
+// -------------------------
+$megamenu-bg                               : $white !default;
+$megamenu-bg-transparent                   : transparent !default;
+$navbar-mega-border                        : transparent !default;
+$navbar-mega-line-height                   : 40px !default;
+
+$navbar-mega-skin2-bg                      : transparent !default;
+$navbar-mega-skin2-border                  : $border-color !default;
+$navbar-mega-skin2-line-height             : 30px !default; 
+
+$navbar-text-transform                     : uppercase !default;
+
+$navbar-font-size                          : 12px !default;
+$navbar-font-weight                        : 400 !default;
+ 
+$navbar-link-active-bg                     : $nocolor !default;
+$navbar-link-active-color                  : $black !default;
+$navbar-link-color                         : $black !default;
+$navbar-link-hover-color                   : $link-hover-color !default;
+$navbar-link-hover-bg                      : $nocolor !default;
+$navbar-link-margin                        : 0 !default;
+$navbar-link-padding                       : 15px 30px !default;
+
+$navbar-widget-title-color                 : $black !default;
+$navbar-widget-title-margin                : 0 0 10px 0 !default;
+$navbar-widget-title-font-size             : $font-size-base !default;
+$navbar-widget-title-font-weight		   : 600 !default;
+
+$navbar-dropdown-padding                   : 15px 25px !default;
+$navbar-dropdown-bg                        : #fff !default;
+$navbar-dropdown-size                      : 220px !default;
+$navbar-dropdown-link-border-color         : $border-color !default;
+$navbar-dropdown-link-color                : $gray-dark !default;
+$navbar-dropdown-link-font-size            : $font-size-base - 1 !default;
+$navbar-dropdown-link-font-weight          : 300 !default;
+$navbar-dropdown-link-hover-bg             : $nocolor !default;
+$navbar-dropdown-link-hover-color          : $link-hover-color !default;
+$navbar-dropdown-link-padding         	   : 13px 15px !default;
+$navbar-dropdown-link-transform            : capitalize !default;
+
+$navbar-link-small-padding                 : 18px 0 !default;
+$navbar-link-large-padding                 : 46px 0 46px !default;  
+
+// Vertical Menu
+// -------------------------
+
+// Top Menu
+// -------------------------
+$navbar-menutop-font-weight				    : 800 !default;
+$navbar-menutop-font-size				    : $font-size-base !default;
+$navbar-menutop-padding-top				    : 22px !default;
+$navbar-menutop-padding-bottom			    : 18px !default;
+$navbar-menutop-color					       : #828282 !default;
+$navbar-menutop-margin					       : 0 10px !default;
+
+// Off-Canvas Menu
+// -------------------------
+$navbar-offcanvas-width                    : 69% !default;
+$navbar-offcanvas-bg-close                 : $nocolor !default;
+$navbar-offcanvas-color                    : $black !default;
+$navbar-offcanvas-bg                       : #f5f5f5  !default;
+$navbar-offcanvas-border                   : rgba(0, 0, 0, 0.1) !default;
+
+// Inverted navbar links
+// -------------------------
+$navbar-offcanvas-link-color               : $text-color !default;
+$navbar-offcanvas-link-hover-color         : #0281AB !default;
+$navbar-offcanvas-link-hover-bg            : transparent !default;
+$navbar-offcanvas-link-active-color        : $navbar-offcanvas-link-hover-color !default;
+$navbar-offcanvas-link-active-bg           : darken($navbar-offcanvas-bg, 10%) !default;
+$navbar-offcanvas-link-disabled-color      : #444 !default;
+$navbar-offcanvas-link-disabled-bg         : transparent !default;
+$navbar-offcanvas-link-font-size           : $font-size-base !default;
+
+// Inverted navbar brand label
+// -------------------------
+$navbar-offcanvas-brand-color              : $navbar-offcanvas-link-color !default;
+$navbar-offcanvas-brand-hover-color        : $white !default;
+$navbar-offcanvas-brand-hover-bg           : transparent !default;
+
+// Inverted navbar search
+// -------------------------
+$navbar-offcanvas-search-bg                : lighten($navbar-offcanvas-bg, 25%) !default;
+$navbar-offcanvas-search-bg-focus          : $white !default;
+$navbar-offcanvas-search-border            : $navbar-offcanvas-bg !default;
+$navbar-offcanvas-search-placeholder-color : $light-gray !default;
+$navbar-offcanvas-search-input-bg          : transparentize($black, .10) !default;
+
+// Inverted navbar toggle
+// -------------------------
+$navbar-offcanvas-toggle-hover-bg          : $gray-dark !default;
+$navbar-offcanvas-toggle-icon-bar-bg       : $white !default;
+$navbar-offcanvas-toggle-border-color      : $gray-dark !default;
+
+$navbar-offcanvas-button-position          : -172px !default;
+
+
+
+// Vertical Menu
+// -------------------------
+
+$navbar-verticalmenu-font-family:         $font-family-base !default;
+$navbar-verticalmenu-content-bg:          #fff!default;
+$navbar-verticalmenu-content-height:      500px !default;
+$navbar-verticalmenu-content-padding:     0 !default;
+$navbar-verticalmenu-content-margin:      0 !default;
+$navbar-verticalmenu-content-border:      $border-color !default;
+$navbar-verticalmenu-font-size:           $font-size-base !default;
+$navbar-verticalmenu-color:               #000 !default;
+$navbar-verticalmenu-font-weight:         600 !default;
+$navbar-verticalmenu-line-height:         16px !default;
+$navbar-verticalmenu-link-padding:        7px 0px!default;
+$navbar-verticalmenu-link-hover-color:    $link-hover-color !default;
+$navbar-verticalmenu-border-color:             $border-color !default;
+$navbar-verticalmenu-description-font-family: $font-family-base !default;
+$navbar-verticalmenu-description-font-size:    $font-size-base !default;
+$navbar-verticalmenu-description-font-style:   normal !default;
+$navbar-verticalmenu-description-color:      #6f757c !default;
+$navbar-verticalmenu-description-font-weight:  400 !default;
+$navbar-verticalmenu-caret-border:             #f5f5f5 !default;
+$navbar-verticalmenu-sub-menu-padding:         15px !default;
+$navbar-verticalmenu-sub-menu-width:           215px !default;
+$navbar-verticalmenu-sub-color:           #6a6a6b !default;
+$navbar-verticalmenu-sub-menu-link-color:      #6a6a6b !default;
+$navbar-verticalmenu-sub-menu-font-family:  $font-family-base !default;
+$navbar-verticalmenu-sub-menu-link-font-size:  $font-size-base  !default;
+$navbar-verticalmenu-sub-menu-heading-color:   $black !default;
+$navbar-verticalmenu-sub-menu-heading-font-size:   $font-size-base !default;
+$navbar-verticalmenu-sub-menu-heading-font-family:   $font-family-base !default;
+$navbar-verticalmenu-sub-menu-bg:               #fff !default;
+$navbar-verticalmenu-sub-menu-link-hover-color:          $theme-color !default;
+$navbar-verticalmenu-sub-shadow:      0px 0px 5px 0px rgba(0, 0, 0, 0.35) !default;
+$navbar-verticalmenu-sub-product-link:         $black !default;
+
+
+$navbar-verticalmenu-widget-title-color:          $black !default;
+$navbar-verticalmenu-widget-title-font-size:       $font-size-base !default;
+$navbar-verticalmenu-widget-title-font-family:     $font-family-base !default;

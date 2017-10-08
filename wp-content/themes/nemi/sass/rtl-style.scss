@@ -1,0 +1,123 @@
+/*
+Theme Name: nemi
+Theme URI: http://nemi.engotheme.com/
+Author: ENGOTHEME Team
+Author URI: https://wordpress.org/
+Description: In 2016, our default theme lets you create a responsive magazine website with a sleek, modern design. Feature your favorite homepage content in either a grid or a slider. Use the three widget areas to customize your website, and change your content's layout with a full-width page template and a contributor page to show off your authors. Creating a magazine website with WordPress has never been easier.
+Version: 1.5
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Text Domain: nemi
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+@import "rtl/rtl";                      // RTL
+
+
+@import "bootstrap-rtl";
+@import "rtl/bootstrap/mixins";
+@import "components/variables";
+@import "components/mixins";
+
+@import "components/base";
+@import "components/template-layout";
+
+@import "components/widget-layout";
+@import "components/widgets";
+
+@import "components/nav";
+@import "components/page";
+@import "components/fonts";
+
+@import "components/post-formats";
+@import "components/post-single";
+@import "components/custom-posttype";
+
+@import "components/elements";
+@import "components/vc";
+@import "components/responsive";
+@import "rtl/bootstrap/utilities";
+
+.woocommerce .woocommerce-ordering, 
+.woocommerce-page .woocommerce-ordering {
+	float: left;
+}
+.woocommerce div.product form.cart div.quantity,
+.woocommerce div.product form.cart .button{
+	float:right;
+}
+.progress-bar{
+	float: right;
+}
+.row_no_padding{
+	left:-10px !important;
+}
+.list-unstyled {
+    padding-right: 0;
+}
+.zoomWindowContainer .zoomWindow{
+ float: left!important;
+ right: 425px!important;
+}
+
+.rtl.woocommerce {
+    .category-content{
+        ul.childrens{
+            padding-right: 0;           
+        }      
+    }
+    ul.product_list_widget {
+        li {          
+            img {
+            	float: right;
+            	margin-left: 15px;
+            	margin-right: 0;
+            }
+            .amount{
+                margin-left: 10px;
+                margin-right: 0;
+            }
+            ins{
+                .amount{
+                    float: right;
+                }
+            }
+        }
+    }
+    // product woocommerce tabs
+    div.product {
+        
+        .woocommerce-tabs{
+            ul.tabs{
+                li{
+                    &:first-child {
+                       margin-right: 0;
+                       margin-left: 0;
+                    }
+                }
+            }
+        }
+        /*------------------------------------*\
+        Quantity inputs
+        \*------------------------------------*/
+       
+    }
+}
+.rtl.single-product.woocommerce .summary.entry-summary .compare::before {
+    right: 0;
+    left: inherit;
+}
+.rtl.single-product.woocommerce .summary.entry-summary .compare {
+    padding: 0 22px 0 0;
+}
+.single-product.woocommerce .summary.entry-summary .yith-wcwl-add-to-wishlist a i{
+    margin: 0 0 0 10px;
+}
+.dropdown-menu{
+    right: 0;
+    float: right;
+}

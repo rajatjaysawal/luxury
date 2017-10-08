@@ -1,0 +1,38 @@
+/*
+Theme Name: nemi
+Theme URI: http://nemi.engotheme.com/
+Author: ENGOTHEME Team
+Author URI: http://engotheme.com
+Description: Nemi is a dedicated WordPress theme for Fashion based on the best eCommerce WordPress platform – WooCommerce with all pages and features supported. The theme comes with amazing 3 demos, multiple header styles, multiple shop layouts and number of CMS pages. Fashion Plus is truely solution to build powerful and professional Fashion store. The WooCommerce theme is easy to customize based on the intuitive theme control panel, clean & optimized codebase and SEO friendly.
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Text Domain: nemi
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import "bootstrap";
+
+@import "components/variables";
+@import "components/mixins";
+
+@import "components/base";
+@import "components/template-layout";
+
+@import "components/widget-layout";
+@import "components/widgets";
+
+@import "components/nav";
+@import "components/page";
+@import "components/fonts";
+
+@import "components/post-formats";
+@import "components/post-single";
+@import "components/custom-posttype";
+
+@import "components/responsive";
+@import "components/elements";
+@import "components/vc";

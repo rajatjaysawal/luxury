@@ -1,0 +1,33 @@
+// Core variables and mixins
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+@import "components/mixins";
+@import "components/variables";
+@import "components/base";
+
+@import "woocommerce/variables";
+@import "woocommerce/widget";
+@import "woocommerce/styles";
+@import "woocommerce/form";
+
+@media (min-width: $screen-sm-max){  
+	.woocommerce #content div.product div.images, .woocommerce div.product div.images, 
+	.woocommerce-page #content div.product div.images, .woocommerce-page div.product div.images {
+		width: 50%;
+	}
+	.woocommerce #content div.product div.summary, .woocommerce div.product div.summary, 
+	.woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary {
+		width: 48%;
+	}
+}
+@media (max-width: $screen-sm-max){  
+	.woocommerce #content div.product div.images, .woocommerce div.product div.images, 
+	.woocommerce-page #content div.product div.images, .woocommerce-page div.product div.images {
+		width: 100%;
+	}
+	.woocommerce #content div.product div.summary, .woocommerce div.product div.summary, 
+	.woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary {
+		width: 100%;
+	}
+}

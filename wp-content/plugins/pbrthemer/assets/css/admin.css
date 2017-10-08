@@ -1,0 +1,60 @@
+.import-process-wrap{
+	width:300px;
+	display: none;
+}
+.progress {
+  width: 0%;
+  height: 10px;
+  background: red;
+}
+.progress-wrap {
+  background: #DDD;
+  margin: 10px 0;
+  overflow: hidden;
+  position: relative;
+  .progress-bar {
+    background: #ddd;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+}
+
+.demo-explain{
+  font-size: 12px;
+  padding-bottom: 10px;
+  color:#333;
+} 
+
+.preview-demos {
+  padding:0;
+  margin:0;
+}
+
+.preview-demos li{
+  display: inline-block;
+  margin: 5px;
+}
+
+.preview-demos li img{
+  height: 180px;
+}
+.preview-demos li a{
+  display: block;
+  background-color:#CCC;
+  padding: 3px;
+}
+
+.preview-demos li a.active, .preview-demos li a:hover{
+  background-color: #0073aa;
+}
+
+.preview-demos li span{
+  display: block;
+  text-align: center;
+  color: #000;
+  padding: 6px 10px;
+  background-color: #DDD;
+  font-weight: bold;
+  font-size: 11px;
+}
